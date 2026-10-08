@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Surviv Interiors — Full home interior design, modular kitchens, wardrobes and best interior solution ideas. Free design consultation.">
+<title>Surviv Interiors | Full Home Interior Design & Best Interior Solution Ideas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#241b14; --coffee:#3e2f24; --gold:#b98846; --gold2:#d9ab60;
+  --cream:#faf6ef; --sand:#f2eadf; --line:#e4d9c9; --muted:#7a6a5c; --white:#fff;
+  --shadow:0 10px 30px rgba(36,27,20,.10); --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Playfair Display',serif;line-height:1.2}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:0 auto}
+.section{padding:96px 0}
+.center{text-align:center}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+.sec-title{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:640px;margin:0 auto 50px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 32px;border-radius:50px;font-weight:600;font-size:.95rem;cursor:pointer;border:0;transition:.3s;font-family:'Poppins',sans-serif}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;box-shadow:0 8px 24px rgba(185,136,70,.35)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(185,136,70,.45)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--coffee)}
+.btn-sm{padding:9px 20px;font-size:.82rem}
+/* ---------- HEADER ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:1000;transition:.35s;padding:22px 0}
+header.scrolled{background:rgba(255,255,255,.97);box-shadow:0 4px 24px rgba(0,0,0,.08);padding:12px 0}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;transition:.3s}
+header.scrolled .brand{color:var(--ink)}
+.brand-mark{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:grid;place-items:center;color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:1.25rem;flex-shrink:0}
+.brand-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;letter-spacing:.01em}
+.brand-tag{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-family:'Poppins',sans-serif;font-weight:400}
+nav.main{display:flex;gap:30px}
+nav.main a{font-size:.88rem;font-weight:500;color:rgba(255,255,255,.92);position:relative;transition:.3s}
+header.scrolled nav.main a{color:var(--ink)}
+nav.main a:hover{color:var(--gold2)}
+header.scrolled nav.main a:hover{color:var(--gold)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.admin-link{font-size:.85rem;font-weight:600;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:7px;cursor:pointer}
+header.scrolled .admin-link{color:var(--muted)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:26px;height:2.5px;background:currentColor;margin:5px 0;transition:.3s;color:#fff}
+header.scrolled .burger span{background:var(--ink)}
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;color:#fff}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.slide.active{opacity:1}
+.slide::after{content:'';position:absolute;inset:0;background:linear-gradient(75deg,rgba(24,17,11,.92) 20%,rgba(24,17,11,.45) 60%,rgba(24,17,11,.15))}
+.slide-1{background:radial-gradient(circle at 75% 30%,#8a5a2b 0%,#4a3120 45%,#241b14 100%)}
+.slide-2{background:radial-gradient(circle at 25% 80%,#6d5c44 0%,#3e3226 50%,#1d1610 100%)}
+.slide-3{background:radial-gradient(circle at 70% 75%,#7c6440 0%,#463626 50%,#20180f 100%)}
+.slide-deco{position:absolute;border-radius:50%;border:1px solid rgba(217,171,96,.25)}
+.slide-deco.d1{width:520px;height:520px;top:-140px;right:-120px}
+.slide-deco.d2{width:340px;height:340px;bottom:-110px;left:-90px;border-color:rgba(217,171,96,.15)}
+.hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;padding:140px 0 120px}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;padding:8px 18px;border:1px solid rgba(217,171,96,.45);border-radius:50px;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);background:rgba(217,171,96,.08);margin-bottom:26px}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--gold2);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);font-weight:700;max-width:760px;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero p{max-width:560px;color:rgba(255,255,255,.82);font-size:1.05rem;font-weight:300;margin-bottom:38px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:64px}
+.hero-stats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.16);padding-top:34px;flex-wrap:wrap}
+.hstat{padding:0 44px 0 0;margin-right:44px;border-right:1px solid rgba(255,255,255,.14)}
+.hstat:last-child{border:0;margin:0;padding:0}
+.hstat b{display:block;font-family:'Playfair Display',serif;font-size:2.1rem;color:var(--gold2)}
+.hstat span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65)}
+.hero-nav{position:absolute;bottom:36px;right:4%;z-index:3;display:flex;gap:12px;align-items:center}
+.hero-arrow{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:#fff;font-size:1.1rem;cursor:pointer;transition:.3s}
+.hero-arrow:hover{background:var(--gold);border-color:var(--gold)}
+.hero-dots{position:absolute;bottom:52px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:10px}
+.hero-dots button{width:34px;height:4px;border-radius:4px;border:0;background:rgba(255,255,255,.3);cursor:pointer;transition:.3s}
+.hero-dots button.on{background:var(--gold2);width:52px}
+/* ---------- TRUST STRIP ---------- */
+.trust{background:var(--ink);color:#fff;padding:34px 0;border-top:3px solid var(--gold)}
+.trust .container{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;text-align:center}
+.trust div b{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold2)}
+.trust div span{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+/* ---------- SERVICES ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.svc{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:36px 28px;transition:.35s;position:relative;overflow:hidden}
+.svc::before{content:'';position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:.4s}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
+.svc:hover::before{transform:scaleX(1)}
+.svc-icon{width:58px;height:58px;border-radius:14px;background:var(--sand);display:grid;place-items:center;margin-bottom:22px;color:var(--gold)}
+.svc h3{font-size:1.18rem;margin-bottom:10px}
+.svc p{font-size:.87rem;color:var(--muted)}
+/* ---------- WHY ---------- */
+.why{background:var(--cream)}
+.why-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.why-list{display:grid;gap:26px;margin-top:34px}
+.why-item{display:flex;gap:18px}
+.why-num{width:44px;height:44px;flex-shrink:0;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:700}
+.why-item h3{font-size:1.08rem;margin-bottom:5px}
+.why-item p{font-size:.88rem;color:var(--muted)}
+.why-art{position:relative;height:480px;border-radius:22px;overflow:hidden;background:linear-gradient(150deg,#8a5a2b,#3e2f24)}
+.why-art::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(217,171,96,.35),transparent 55%)}
+.why-card{position:absolute;background:#fff;border-radius:14px;padding:16px 20px;box-shadow:var(--shadow)}
+.why-card.c1{top:36px;left:-24px}
+.why-card.c2{bottom:60px;right:-18px}
+.why-card b{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold)}
+.why-card span{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.why-img-strip{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:12px}
+.why-img-strip i{width:86px;height:130px;border-radius:12px;border:3px solid rgba(255,255,255,.85);box-shadow:var(--shadow)}
+.why-img-strip i:nth-child(1){background:linear-gradient(160deg,#c99a5b,#6d4520)}
+.why-img-strip i:nth-child(2){background:linear-gradient(160deg,#a8896a,#4d3a28);transform:translateY(-16px)}
+.why-img-strip i:nth-child(3){background:linear-gradient(160deg,#d9ab60,#7c5a28)}
+/* ---------- PROCESS ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+.step{position:relative;padding:40px 26px 30px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);transition:.3s}
+.step:hover{box-shadow:var(--shadow);transform:translateY(-6px)}
+.step::before{counter-increment:step;content:'0' counter(step);font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--sand);position:absolute;top:14px;right:20px;font-weight:700}
+.step h3{font-size:1.05rem;margin:16px 0 8px}
+.step p{font-size:.85rem;color:var(--muted)}
+.step-icon{width:52px;height:52px;border-radius:50%;background:var(--sand);color:var(--gold);display:grid;place-items:center}
+/* ---------- GALLERY ---------- */
+.gallery{background:var(--cream)}
+.filters{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:44px}
+.chip{padding:10px 24px;border-radius:50px;border:1.5px solid var(--line);background:#fff;font-size:.83rem;font-weight:500;cursor:pointer;transition:.3s;font-family:'Poppins',sans-serif;color:var(--ink)}
+.chip.on,.chip:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.media-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:18px}
+.m-item{position:relative;border-radius:var(--radius);overflow:hidden;cursor:pointer;background-size:cover;background-position:center;box-shadow:var(--shadow)}
+.m-item:nth-child(3n){grid-column:span 2;grid-row:span 2}
+.m-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+.m-item:hover img{transform:scale(1.07)}
+.m-item .tile{position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.9)}
+.m-item .tile .serif{font-size:1.3rem;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+.m-item .veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,14,9,.85),transparent 55%);opacity:0;transition:.35s;display:flex;align-items:flex-end;padding:18px}
+.m-item:hover .veil{opacity:1}
+.m-item .veil b{color:#fff;font-size:.95rem;display:block}
+.m-item .veil small{color:var(--gold2);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+.m-badge{position:absolute;top:12px;right:12px;padding:5px 12px;border-radius:50px;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;background:rgba(255,255,255,.92);color:var(--ink);z-index:2}
+.m-badge.video{background:rgba(185,136,70,.95);color:#fff}
+.play-btn{position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.9);color:var(--ink);display:grid;place-items:center;font-size:1.05rem;z-index:2;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+/* ---------- TESTIMONIALS ---------- */
+.testi-wrap{position:relative;overflow:hidden;max-width:860px;margin:0 auto}
+.testi-track{display:flex;transition:transform .55s cubic-bezier(.22,.8,.3,1)}
+.testi{min-width:100%;padding:0 14px;text-align:center}
+.testi .q{font-family:'Playfair Display',serif;font-size:3.2rem;color:var(--gold2);line-height:0;display:block;margin-bottom:26px}
+.testi p{font-family:'Playfair Display',serif;font-size:clamp(1.05rem,2vw,1.35rem);font-style:italic;color:var(--coffee);max-width:680px;margin:0 auto 26px}
+.stars{color:var(--gold);letter-spacing:3px;font-size:1rem;margin-bottom:16px}
+.testi .who b{display:block;font-size:.95rem}
+.testi .who span{font-size:.75rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.testi-nav{display:flex;justify-content:center;gap:10px;margin-top:36px}
+.testi-nav button{width:10px;height:10px;border-radius:50%;border:0;background:var(--line);cursor:pointer;transition:.3s}
+.testi-nav button.on{background:var(--gold);transform:scale(1.3)}
+.fb-form{max-width:640px;margin:64px auto 0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:40px;box-shadow:var(--shadow)}
+.fb-form h3{text-align:center;margin-bottom:6px}
+.fb-form .sub{text-align:center;color:var(--muted);font-size:.85rem;margin-bottom:26px}
+/* ---------- FAQ ---------- */
+.faq-list{max-width:780px;margin:0 auto;display:grid;gap:14px}
+.faq{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s}
+.faq.open{border-color:var(--gold);box-shadow:var(--shadow)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 26px;background:none;border:0;cursor:pointer;text-align:left;font-family:'Poppins',sans-serif;font-size:.98rem;font-weight:600;color:var(--ink)}
+.faq-q i{font-style:normal;color:var(--gold);font-size:1.3rem;transition:.3s;flex-shrink:0}
+.faq.open .faq-q i{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding:0 26px 24px;color:var(--muted);font-size:.88rem}
+/* ---------- CONTACT ---------- */
+.contact{background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.lead-form{background:var(--white);border-radius:18px;padding:46px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.lead-form h3{font-size:1.5rem;margin-bottom:6px}
+.lead-form .sub{color:var(--muted);font-size:.87rem;margin-bottom:30px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.f-group{display:flex;flex-direction:column;gap:7px}
+.f-group.full{grid-column:1/-1}
+.f-group label{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--coffee)}
+.f-group label i{color:#c0392b;font-style:normal}
+.f-group input,.f-group select,.f-group textarea{font-family:'Poppins',sans-serif;font-size:.9rem;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);transition:.25s;outline:none;width:100%}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(185,136,70,.12)}
+.f-group textarea{resize:vertical;min-height:110px}
+.info-card{display:flex;gap:18px;padding:24px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px;transition:.3s}
+.info-card:hover{box-shadow:var(--shadow);transform:translateX(6px)}
+.info-card .ic{width:48px;height:48px;flex-shrink:0;border-radius:12px;background:var(--sand);color:var(--gold);display:grid;place-items:center}
+.info-card b{display:block;font-size:.95rem;margin-bottom:2px}
+.info-card span{font-size:.85rem;color:var(--muted)}
+.cta-banner{margin-top:16px;background:linear-gradient(135deg,var(--ink),var(--coffee));color:#fff;border-radius:var(--radius);padding:34px;position:relative;overflow:hidden}
+.cta-banner::after{content:'';position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(217,171,96,.3),transparent 70%);top:-90px;right:-60px}
+.cta-banner h3{font-size:1.4rem;margin-bottom:8px;position:relative}
+.cta-banner p{font-size:.87rem;color:rgba(255,255,255,.75);margin-bottom:20px;position:relative}
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:72px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:44px;padding-bottom:52px}
+.foot-grid h4{color:#fff;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:20px;font-family:'Poppins',sans-serif;font-weight:600}
+.foot-grid p,.foot-grid a{font-size:.85rem;color:rgba(255,255,255,.62)}
+.foot-grid ul{list-style:none;display:grid;gap:11px}
+.foot-grid a:hover{color:var(--gold2)}
+.socials{display:flex;gap:11px;margin-top:20px}
+.socials a{width:40px;height:40px;border-radius:10px;border:1px solid rgba(255,255,255,.2);display:grid;place-items:center;color:rgba(255,255,255,.8);transition:.3s}
+.socials a:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.78rem}
+/* ---------- FLOATING ---------- */
+.wa-fab{position:fixed;bottom:26px;right:26px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45);z-index:900;transition:.3s}
+.wa-fab:hover{transform:scale(1.1)}
+.to-top{position:fixed;bottom:26px;right:96px;width:46px;height:46px;border-radius:50%;background:var(--white);border:1px solid var(--line);color:var(--ink);display:grid;place-items:center;box-shadow:var(--shadow);z-index:900;opacity:0;pointer-events:none;transition:.3s}
+.to-top.show{opacity:1;pointer-events:auto}
+/* ---------- LIGHTBOX ---------- */
+.lightbox{position:fixed;inset:0;background:rgba(18,12,8,.94);z-index:2000;display:none;align-items:center;justify-content:center;padding:40px}
+.lightbox.open{display:flex}
+.lb-inner{max-width:960px;width:100%;position:relative}
+.lb-inner img{max-height:78vh;width:auto;margin:0 auto;border-radius:10px}
+.lb-inner iframe{width:100%;height:70vh;border:0;border-radius:10px}
+.lb-close{position:absolute;top:-48px;right:0;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
+.lb-cap{color:rgba(255,255,255,.8);text-align:center;margin-top:16px;font-family:'Playfair Display',serif;font-size:1.05rem}
+/* ---------- ADMIN ---------- */
+.modal{position:fixed;inset:0;background:rgba(18,12,8,.7);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-box{background:#fff;border-radius:18px;padding:40px;width:100%;max-width:400px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.modal-box h3{margin-bottom:6px}
+.modal-box .sub{color:var(--muted);font-size:.85rem;margin-bottom:24px}
+.admin{position:fixed;inset:0;background:var(--cream);z-index:2500;display:none;flex-direction:column;overflow:auto}
+.admin.open{display:flex}
+.ad-top{background:var(--ink);color:#fff;padding:18px 0;position:sticky;top:0;z-index:5}
+.ad-top .container{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ad-top .brand{color:#fff}
+.ad-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.ad-tabs button{padding:9px 18px;border-radius:50px;border:1px solid rgba(255,255,255,.25);background:transparent;color:rgba(255,255,255,.85);font-size:.8rem;font-weight:500;cursor:pointer;font-family:'Poppins',sans-serif;transition:.25s}
+.ad-tabs button.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.ad-logout{background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:50px;padding:9px 18px;font-size:.8rem;cursor:pointer;font-family:'Poppins',sans-serif}
+.ad-body{flex:1;padding:36px 0 80px}
+.ad-pane{display:none;animation:fade .35s}
+.ad-pane.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-bottom:36px}
+.stat-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stat-card b{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--gold)}
+.stat-card span{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ad-panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;margin-bottom:26px;box-shadow:var(--shadow)}
+.ad-panel h3{font-size:1.2rem;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.83rem;min-width:640px}
+th{text-align:left;padding:12px 14px;background:var(--sand);color:var(--coffee);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+td{padding:13px 14px;border-top:1px solid var(--line);vertical-align:top}
+tr:hover td{background:#fcf9f4}
+.status-pill{padding:5px 13px;border-radius:50px;font-size:.7rem;font-weight:600;letter-spacing:.04em;white-space:nowrap}
+.st-New{background:#fde8e8;color:#c0392b}.st-Contacted{background:#fef3e2;color:#b9770e}.st-SiteVisit{background:#e8f0fd;color:#2b6cb0}.st-Quotation{background:#f3e8fd;color:#7c3aed}.st-Won{background:#e6f7ec;color:#1e8e3e}.st-Lost{background:#ececec;color:#666}
+select.st-sel{padding:6px 10px;border:1.5px solid var(--line);border-radius:8px;font-size:.78rem;font-family:'Poppins',sans-serif;cursor:pointer}
+.icon-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:#fff;cursor:pointer;display:inline-grid;place-items:center;color:var(--muted);transition:.25s;margin-right:6px}
+.icon-btn:hover{background:#fbe9d6;color:var(--gold);border-color:var(--gold)}
+.icon-btn.danger:hover{background:#fde8e8;color:#c0392b;border-color:#c0392b}
+.toggle{position:relative;width:46px;height:25px;background:#d8cfc2;border-radius:50px;border:0;cursor:pointer;transition:.3s;flex-shrink:0}
+.toggle::after{content:'';position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#fff;transition:.3s;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.toggle.on{background:var(--gold)}
+.toggle.on::after{left:24px}
+.ad-toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;align-items:center}
+.upload-zone{border:2px dashed var(--line);border-radius:var(--radius);padding:36px;text-align:center;cursor:pointer;transition:.3s;background:#fcfaf6}
+.upload-zone:hover{border-color:var(--gold);background:#fdf6ec}
+.upload-zone input{display:none}
+.upload-zone p{color:var(--muted);font-size:.87rem;margin-top:10px}
+.med-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;margin-top:26px}
+.med-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s}
+.med-card:hover{box-shadow:var(--shadow)}
+.med-thumb{height:140px;position:relative;background:var(--sand);display:grid;place-items:center;color:var(--muted)}
+.med-thumb img{width:100%;height:100%;object-fit:cover}
+.med-thumb .play-btn{width:44px;height:44px;font-size:.8rem}
+.med-body{padding:14px 16px}
+.med-body b{font-size:.84rem;display:block;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.med-body small{font-size:.68rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.med-actions{display:flex;gap:6px;padding:0 14px 14px;align-items:center}
+.med-actions .toggle{margin-left:auto}
+.empty{padding:50px 20px;text-align:center;color:var(--muted);font-size:.9rem}
+.empty .serif{font-size:1.15rem;display:block;margin-bottom:6px;color:var(--coffee)}
+/* ---------- TOAST ---------- */
+.toast{position:fixed;top:26px;left:50%;transform:translate(-50%,-120%);background:var(--ink);color:#fff;padding:15px 28px;border-radius:50px;font-size:.87rem;z-index:4000;transition:.4s cubic-bezier(.22,.8,.3,1);box-shadow:0 12px 40px rgba(0,0,0,.3);max-width:90%}
+.toast.show{transform:translate(-50%,0)}
+.toast.ok{background:#1e8e3e}
+.toast.err{background:#c0392b}
+.demo-banner{position:fixed;bottom:0;left:0;right:0;background:#fef3e2;color:#8a5a10;font-size:.78rem;text-align:center;padding:9px;z-index:1500;border-top:1px solid #f0dcae}
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1020px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .why-grid,.contact-grid{grid-template-columns:1fr;gap:46px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .media-grid{grid-template-columns:repeat(2,1fr)}
+  .media-grid .m-item:nth-child(3n){grid-column:auto;grid-row:auto}
+}
+@media(max-width:760px){
+  .section{padding:70px 0}
+  nav.main{position:fixed;inset:0;background:var(--ink);flex-direction:column;align-items:center;justify-content:center;gap:30px;transform:translateY(-100%);transition:.4s;z-index:999}
+  nav.main.open{transform:none}
+  nav.main a{color:#fff;font-size:1.15rem}
+  .burger{display:block;z-index:1001;position:relative}
+  .nav-right .btn{display:none}
+  .hstat{padding-right:24px;margin-right:24px}
+  .hstat b{font-size:1.6rem}
+  .hero-stats{gap:18px}
+  .f-row{grid-template-columns:1fr}
+  .lead-form{padding:30px 22px}
+  .why-art{height:360px}
+  .media-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-nav{display:none}
+  .ad-top .container{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="siteHeader">
+  <div class="container">
+    <a href="#home" class="brand">
+      <span class="brand-mark">S</span>
+      <span>
+        <span class="brand-name" data-cfg="businessName">Surviv Interiors</span>
+        <span class="brand-tag" data-cfg="tagline">Full Home Interior Design</span>
+      </span>
+    </a>
+    <nav class="main" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <span class="admin-link" id="adminOpenBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Admin
+      </span>
+      <a href="#contact" class="btn btn-gold btn-sm">Free Consultation</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="slide slide-1 active" id="slide1">
+    <div class="slide-deco d1"></div><div class="slide-deco d2"></div>
+  </div>
+  <div class="slide slide-2" id="slide2"><div class="slide-deco d1"></div><div class="slide-deco d2"></div></div>
+  <div class="slide slide-3" id="slide3"><div class="slide-deco d1"></div><div class="slide-deco d2"></div></div>
+
+  <div class="hero-inner">
+    <span class="hero-badge"><span class="dot"></span> Trusted Interior Studio</span>
+    <h1>Full Home <em>Interior Design</em> &amp; Best Interior Solution Ideas</h1>
+    <p>From concept to keys — we design complete homes with 3D visualisation, premium materials and flawless installation. Your dream home, delivered on time and on budget.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-gold">Book Free Design Consultation</a>
+      <a href="#gallery" class="btn btn-ghost">Explore Our Work</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><b data-count="500">0</b><span>Projects Delivered</span></div>
+      <div class="hstat"><b data-count="12">0</b><span>Years Experience</span></div>
+      <div class="hstat"><b data-count="98">0</b><span>% Happy Clients</span></div>
+      <div class="hstat"><b data-count="45">0</b><span>Design Awards</span></div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="hero-nav">
+    <button class="hero-arrow" id="prevSlide" aria-label="Previous">&#10094;</button>
+    <button class="hero-arrow" id="nextSlide" aria-label="Next">&#10095;</button>
+  </div>
+</section>
+
+<!-- ================= TRUST ================= -->
+<div class="trust">
+  <div class="container">
+    <div><b>100%</b><span>Custom Design</span></div>
+    <div><b>Free</b><span>Site Visit &amp; 3D Plan</span></div>
+    <div><b>No-Cost</b><span>EMI Options</span></div>
+    <div><b>5-Year</b><span>Service Warranty</span></div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">What We Design</span>
+      <h2 class="sec-title">Interior Solutions For Every Space</h2>
+      <p class="sec-sub">End-to-end home interiors — design, manufacturing and installation under one roof.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Full Home Interior</h3>
+        <p>Complete 2BHK &amp; 3BHK interiors with living, bedrooms, kitchen and storage — designed as one cohesive story.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 12h18M8 7V5h8v2"/></svg></div>
+        <h3>Modular Kitchen</h3>
+        <p>Smart modular kitchens with elegant shutters, hardware, chimneys and built-in appliances in 15+ finishes.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 9h16M12 3v6M12 9v12"/></svg></div>
+        <h3>Wardrobes &amp; Storage</h3>
+        <p>Custom sliding &amp; open wardrobes, walk-in closets and clever storage for every corner of your home.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 11V7a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4"/><path d="M3 13a2 2 0 0 1 4 0v1h10v-1a2 2 0 0 1 4 0v3a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3z"/></svg></div>
+        <h3>Living Room</h3>
+        <p>Elegant living spaces with bespoke sofas, wall panels, TV units and statement lighting.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18M5 10V6h14v4"/><path d="M7 14h4"/></svg></div>
+        <h3>Bedroom Suites</h3>
+        <p>Serene bedrooms with upholstered headboards, beds with storage, nightstands and ambient lighting.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4L12 3z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/></svg></div>
+        <h3>Kids Room</h3>
+        <p>Playful, safe and creative kids' rooms with themed walls, study corners and durable finishes.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 21V7l8-4 8 4v14"/><path d="M4 21h16M9 21v-5h6v5"/><path d="M9 10h.01M15 10h.01"/></svg></div>
+        <h3>Home Office</h3>
+        <p>Productive work-from-home setups with ergonomic desks, shelving and acoustic comfort.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5a2 2 0 0 1 4 0M18 12V5a2 2 0 0 0-4 0"/></svg></div>
+        <h3>Bathroom &amp; False Ceiling</h3>
+        <p>Luxury bathrooms, waterproof panels and modern false ceilings with cove lighting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section why" id="why">
+  <div class="container why-grid">
+    <div class="reveal">
+      <span class="kicker">Why Surviv Interiors</span>
+      <h2 class="sec-title" style="text-align:left">The Best Interior Solution Idea, Executed Perfectly</h2>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-num">1</div>
+          <div><h3>Free 3D Design Consultation</h3><p>Walk through your dream home in photorealistic 3D before we touch a single wall. Revisions until you love it.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">2</div>
+          <div><h3>In-House Manufacturing</h3><p>Our own workshop means superior quality control, zero contractor chaos and faster delivery.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">3</div>
+          <div><h3>Transparent Fixed Pricing</h3><p>Itemised quotations, no hidden costs and no-cost EMI options on every project.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">4</div>
+          <div><h3>Project Tracking &amp; Warranty</h3><p>Live project updates, dedicated relationship manager and 5-year warranty on craftsmanship.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="why-art reveal">
+      <div class="why-img-strip"><i></i><i></i><i></i></div>
+      <div class="why-card c1"><b>500+</b><span>Homes Designed</span></div>
+      <div class="why-card c2"><b>15 Days</b><span>Avg. Design Approval</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">How We Work</span>
+      <h2 class="sec-title">From Idea to Move-In, in 4 Steps</h2>
+      <p class="sec-sub">A refined process trusted by hundreds of families.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 8.5-8.5 8.38 8.38 0 0 1 8.5 8.5z"/></svg></div><h3>Consult &amp; Measure</h3><p>Free site visit. Our designers listen to your lifestyle, needs and budget.</p></div>
+      <div class="step reveal"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg></div><h3>3D Design</h3><p>Photorealistic 3D renders of every room with material and colour palettes.</p></div>
+      <div class="step reveal"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L3 18l3 3 6.1-6.1a4 4 0 0 0 5.6-5.6L14.5 12l-2.5-2.5 2.7-3.2z"/></svg></div><h3>Craft &amp; Manufacture</h3><p>Precision crafting in our workshop using premium, eco-friendly materials.</p></div>
+      <div class="step reveal"><div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/><path d="M9 22V12h6v10"/></svg></div><h3>Install &amp; Delight</h3><p>On-time installation, deep cleaning and a handover you'll love walking into.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">Our Portfolio</span>
+      <h2 class="sec-title">Recent Projects &amp; Design Ideas</h2>
+      <p class="sec-sub">A glimpse of real homes transformed by our design studio.</p>
+    </div>
+    <div class="filters reveal" id="mediaFilters">
+      <button class="chip on" data-filter="all">All</button>
+      <button class="chip" data-filter="photo">Photos</button>
+      <button class="chip" data-filter="video">Videos</button>
+      <button class="chip" data-cat="Living">Living</button>
+      <button class="chip" data-cat="Kitchen">Kitchen</button>
+      <button class="chip" data-cat="Bedroom">Bedroom</button>
+    </div>
+    <div class="media-grid" id="mediaGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="center reveal">
+      <span class="kicker">Client Stories</span>
+      <h2 class="sec-title">What Homeowners Say About Us</h2>
+    </div>
+    <div class="testi-wrap reveal">
+      <div class="testi-track" id="testiTrack"></div>
+    </div>
+    <div class="testi-nav" id="testiNav"></div>
+
+    <div class="fb-form reveal">
+      <h3>Share Your Experience</h3>
+      <p class="sub">Your feedback helps us design better homes.</p>
+      <form id="feedbackForm">
+        <div class="f-row">
+          <div class="f-group"><label>Name <i>*</i></label><input type="text" name="name" required placeholder="Your name"></div>
+          <div class="f-group"><label>Email</label><input type="email" name="email" placeholder="you@example.com"></div>
+        </div>
+        <div class="f-group" style="margin-bottom:16px">
+          <label>Rating <i>*</i></label>
+          <div id="starInput" style="font-size:1.9rem;letter-spacing:6px;color:#d8cfc2;cursor:pointer;user-select:none">
+            <span data-v="1">&#9733;</span><span data-v="2">&#9733;</span><span data-v="3">&#9733;</span><span data-v="4">&#9733;</span><span data-v="5">&#9733;</span>
+          </div>
+          <input type="hidden" name="rating" id="ratingInput" value="5">
+        </div>
+        <div class="f-group" style="margin-bottom:20px"><label>Your Feedback <i>*</i></label><textarea name="message" required placeholder="Tell us about your experience with Surviv Interiors..."></textarea></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center" id="fbSubmit">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" style="padding-top:20px">
+  <div class="container">
+    <div class="center reveal" style="margin-bottom:46px">
+      <span class="kicker">Good To Know</span>
+      <h2 class="sec-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq reveal"><button class="faq-q">How much does a full home interior cost?<i>+</i></button><div class="faq-a"><p>Costs depend on area, materials and scope. A standard full-home project typically starts from a few lakhs. After a free site visit we share a detailed, itemised quotation with no hidden charges — and no-cost EMI options are available.</p></div></div>
+      <div class="faq reveal"><button class="faq-q">How long does a project take?<i>+</i></button><div class="faq-a"><p>Design approval usually takes 10–15 days. Manufacturing takes 25–40 days depending on scope, and installation typically completes in 7–15 days. You'll get a timeline upfront and live progress updates throughout.</p></div></div>
+      <div class="faq reveal"><button class="faq-q">Do you offer free design consultation?<i>+</i></button><div class="faq-a"><p>Yes — the first consultation, site measurement and 3D concept design are completely free with no obligation to proceed.</p></div></div>
+      <div class="faq reveal"><button class="faq-q">Can I see designs before production starts?<i>+</i></button><div class="faq-a"><p>Absolutely. We create photorealistic 3D renders of every space. Nothing goes into production until you approve the final design.</p></div></div>
+      <div class="faq reveal"><button class="faq-q">Do you provide a warranty?<i>+</i></button><div class="faq-a"><p>Yes, all our craftsmanship carries a 5-year service warranty, and we offer lifetime support for any questions about your interiors.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="center reveal" style="margin-bottom:50px">
+      <span class="kicker">Get In Touch</span>
+      <h2 class="sec-title">Book Your Free Design Consultation</h2>
+      <p class="sec-sub">Share your details and our interior experts will call you within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="lead-form reveal" id="leadForm">
+        <h3>Request a Free Site Visit</h3>
+        <p class="sub">No spam, no pressure — just a friendly design conversation.</p>
+        <div class="f-row">
+          <div class="f-group"><label>Full Name <i>*</i></label><input type="text" name="name" required placeholder="e.g. Priya Sharma"></div>
+          <div class="f-group"><label>Phone <i>*</i></label><input type="tel" name="phone" required placeholder="10-digit mobile number"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>Email</label><input type="email" name="email" placeholder="you@example.com"></div>
+          <div class="f-group"><label>City</label><input type="text" name="city" placeholder="Your city"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>Service Needed</label>
+            <select name="service">
+              <option value="Full Home Interior">Full Home Interior</option>
+              <option value="Modular Kitchen">Modular Kitchen</option>
+              <option value="Wardrobe & Storage">Wardrobe &amp; Storage</option>
+              <option value="Living Room">Living Room</option>
+              <option value="Bedroom">Bedroom</option>
+              <option value="Kids Room">Kids Room</option>
+              <option value="Home Office">Home Office</option>
+              <option value="Other / Not Sure">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="f-group"><label>Budget</label>
+            <select name="budget">
+              <option value="">Select budget</option>
+              <option value="Under ₹2 Lakh">Under ₹2 Lakh</option>
+              <option value="₹2 - 5 Lakh">₹2 - 5 Lakh</option>
+              <option value="₹5 - 10 Lakh">₹5 - 10 Lakh</option>
+              <option value="₹10 Lakh +">₹10 Lakh +</option>
+              <option value="Not Sure">Not Sure</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-group" style="margin-bottom:22px"><label>Tell us about your project</label><textarea name="message" placeholder="e.g. 3BHK apartment, 1800 sq ft, modern style with warm wood tones..."></textarea></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center" id="leadSubmit">Submit Enquiry</button>
+        <p style="font-size:.72rem;color:var(--muted);text-align:center;margin-top:14px">Or call us directly: <b id="phoneInline" style="color:var(--gold)"></b></p>
+      </form>
+
+      <div class="reveal">
+        <div class="info-card">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div>
+          <div><b>Call Us</b><span id="infoPhone">—</span></div>
+        </div>
+        <div class="info-card">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b>Visit Our Studio</b><span id="infoAddress">—</span></div>
+        </div>
+        <div class="info-card">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+          <div><b>Email Us</b><span id="infoEmail">—</span></div>
+        </div>
+        <div class="info-card">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><b>Studio Hours</b><span>Mon – Sat: 10:00 AM – 8:00 PM</span></div>
+        </div>
+        <div class="cta-banner">
+          <h3>Prefer WhatsApp?</h3>
+          <p>Send us photos of your space and get instant ideas from our design team.</p>
+          <a href="#" class="btn btn-gold btn-sm" id="waLink" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:18px">
+          <span class="brand-mark">S</span>
+          <span><span class="brand-name" data-cfg="businessName">Surviv Interiors</span><br><span class="brand-tag" data-cfg="tagline">Full Home Interior Design</span></span>
+        </div>
+        <p data-cfg="footerBlurb">Crafting dream homes with full home interior design and the best interior solution ideas — from concept to keys.</p>
+        <div class="socials">
+          <a href="#" data-social="facebook" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l-.5 3H14v9h-3.5v-9H8V9h2.5V7c0-2.5 1.5-4 4-4H17v3h-1.8c-1 0-1.2.4-1.2 1.2V9z"/></svg></a>
+          <a href="#" data-social="instagram" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" data-social="youtube" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.8-.5-5.6c-.3-1-1-1.7-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4c-1 .3-1.7 1-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6c.3 1 1 1.7 2 2 1.8.4 8.5.4 8.5.4s6.7 0 8.5-.4c1-.3 1.7-1 2-2 .5-1.8.5-5.6.5-5.6zM9.8 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Full Home Interior</a></li>
+          <li><a href="#services">Modular Kitchen</a></li>
+          <li><a href="#services">Wardrobes &amp; Storage</a></li>
+          <li><a href="#services">Living Room</a></li>
+          <li><a href="#services">Kids Room</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li id="footPhone">—</li>
+          <li id="footEmail">—</li>
+          <li id="footAddress">—</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> <span data-cfg="businessName">Surviv Interiors</span>. All rights reserved.</span>
+      <span>Crafted with passion — Full Home Interior Design &amp; Best Interior Solution Ideas</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING ================= -->
+<a href="#" class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.2-.8l.5-.6c.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.3c1.7.9 2.4 1 3.2.8.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-inner">
+    <button class="lb-close" id="lbClose">&times;</button>
+    <div id="lbContent"></div>
+    <p class="lb-cap" id="lbCap"></p>
+  </div>
+</div>
+
+<!-- ================= ADMIN LOGIN MODAL ================= -->
+<div class="modal" id="loginModal">
+  <div class="modal-box">
+    <h3>Admin Login</h3>
+    <p class="sub">Enter your admin password to manage leads, media &amp; feedback.</p>
+    <form id="loginForm">
+      <div class="f-group" style="margin-bottom:20px">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Admin password" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-dark" style="width:100%;justify-content:center">Login to Admin Panel</button>
+    </form>
+  </div>
+</div>
+
+<!-- ================= ADMIN PANEL ================= -->
+<div class="admin" id="adminPanel">
+  <div class="ad-top">
+    <div class="container">
+      <div class="brand">
+        <span class="brand-mark">S</span>
+        <span><span class="brand-name">Surviv Interiors</span><br><span class="brand-tag">Admin Panel</span></span>
+      </div>
+      <div class="ad-tabs" id="adTabs">
+        <button class="on" data-tab="dashboard">Dashboard</button>
+        <button data-tab="leads">Leads</button>
+        <button data-tab="feedback">Feedback</button>
+        <button data-tab="media">Photos &amp; Videos</button>
+        <button data-tab="settings">Settings</button>
+      </div>
+      <button class="ad-logout" id="adLogout">Logout</button>
+    </div>
+  </div>
+  <div class="container ad-body">
+
+    <!-- DASHBOARD -->
+    <div class="ad-pane on" data-pane="dashboard">
+      <div class="stat-grid" id="statGrid"></div>
+      <div class="ad-panel">
+        <h3>Recent Leads <button class="btn btn-dark btn-sm" data-goto="leads">View All</button></h3>
+        <div class="table-wrap"><table><thead><tr><th>Date</th><th>Name</th><th>Phone</th><th>Service</th><th>Budget</th><th>Status</th></tr></thead><tbody id="dashLeads"></tbody></table></div>
+      </div>
+      <div class="ad-panel">
+        <h3>Recent Feedback <button class="btn btn-dark btn-sm" data-goto="feedback">View All</button></h3>
+        <div class="table-wrap"><table><thead><tr><th>Date</th><th>Name</th><th>Rating</th><th>Message</th><th>Approved</th></tr></thead><tbody id="dashFeedback"></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- LEADS -->
+    <div class="ad-pane" data-pane="leads">
+      <div class="ad-panel">
+        <h3>Lead Management
+          <span style="display:flex;gap:10px">
+            <button class="btn btn-dark btn-sm" id="exportCsvBtn">Export CSV</button>
+            <button class="btn btn-dark btn-sm" id="refreshLeadsBtn">Refresh</button>
+          </span>
+        </h3>
+        <div class="table-wrap"><table><thead><tr>
+          <th>ID</th><th>Date</th><th>Name</th><th>Phone</th><th>Email</th><th>City</th><th>Service</th><th>Budget</th><th>Message</th><th>Source</th><th>Status</th><th>Actions</th>
+        </tr></thead><tbody id="leadsTable"></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="ad-pane" data-pane="feedback">
+      <div class="ad-panel">
+        <h3>Feedback Management <button class="btn btn-dark btn-sm" id="refreshFbBtn">Refresh</button></h3>
+        <div class="table-wrap"><table><thead><tr>
+          <th>ID</th><th>Date</th><th>Name</th><th>Email</th><th>Rating</th><th>Message</th><th>Show on Site</th><th>Actions</th>
+        </tr></thead><tbody id="fbTable"></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- MEDIA -->
+    <div class="ad-pane" data-pane="media">
+      <div class="ad-panel">
+        <h3>Add Photo</h3>
+        <label class="upload-zone" id="uploadZone">
+          <input type="file" id="photoInput" accept="image/*">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#b98846" stroke-width="1.6"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg>
+          <p><b>Click to upload a photo</b><br>JPG / PNG — keeps files under ~2MB for best results</p>
+        </label>
+        <div class="f-row" style="margin-top:16px">
+          <div class="f-group"><label>Title</label><input type="text" id="photoTitle" placeholder="e.g. Modern Living Room - Maple Wood"></div>
+          <div class="f-group"><label>Category</label>
+            <select id="photoCat"><option>Living</option><option>Kitchen</option><option>Bedroom</option><option>Kids</option><option>Office</option><option>Bathroom</option><option>General</option></select>
+          </div>
+        </div>
+        <button class="btn btn-gold btn-sm" id="uploadPhotoBtn" style="margin-top:14px">Upload Photo</button>
+      </div>
+      <div class="ad-panel">
+        <h3>Add Video</h3>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:16px">Paste a YouTube, Vimeo or Google Drive video link. YouTube videos play directly on your site.</p>
+        <div class="f-row">
+          <div class="f-group" style="grid-column:1/-1"><label>Video URL</label><input type="url" id="videoUrl" placeholder="https://www.youtube.com/watch?v=..."></div>
+          <div class="f-group"><label>Title</label><input type="text" id="videoTitle" placeholder="e.g. 3BHK Walkthrough Tour"></div>
+          <div class="f-group"><label>Category</label>
+            <select id="videoCat"><option>General</option><option>Living</option><option>Kitchen</option><option>Bedroom</option><option>Kids</option><option>Office</option><option>Bathroom</option></select>
+          </div>
+        </div>
+        <button class="btn btn-gold btn-sm" id="addVideoBtn" style="margin-top:14px">Add Video</button>
+      </div>
+      <div class="ad-panel">
+        <h3>Media Library <button class="btn btn-dark btn-sm" id="refreshMediaBtn">Refresh</button></h3>
+        <div class="med-grid" id="mediaLib"></div>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="ad-pane" data-pane="settings">
+      <div class="ad-panel">
+        <h3>Business Information</h3>
+        <div class="f-row">
+          <div class="f-group"><label>Business Name</label><input type="text" id="cfgBusinessName"></div>
+          <div class="f-group"><label>Tagline</label><input type="text" id="cfgTagline"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>Phone</label><input type="text" id="cfgPhone"></div>
+          <div class="f-group"><label>WhatsApp Number (with country code)</label><input type="text" id="cfgWhatsapp" placeholder="e.g. 919876543210"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>Email</label><input type="text" id="cfgEmail"></div>
+          <div class="f-group"><label>Address</label><input type="text" id="cfgAddress"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>Google Maps Link</label><input type="url" id="cfgMapLink"></div>
+          <div class="f-group"><label>Facebook URL</label><input type="url" id="cfgFacebook"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>Instagram URL</label><input type="url" id="cfgInstagram"></div>
+          <div class="f-group"><label>YouTube URL</label><input type="url" id="cfgYoutube"></div>
+        </div>
+        <button class="btn btn-gold btn-sm" id="saveCfgBtn" style="margin-top:6px">Save Settings</button>
+      </div>
+      <div class="ad-panel">
+        <h3>Security</h3>
+        <div class="f-row">
+          <div class="f-group"><label>New Admin Password</label><input type="password" id="cfgNewPass" placeholder="Leave blank to keep current"></div>
+          <div class="f-group"><label>Confirm New Password</label><input type="password" id="cfgNewPass2" placeholder="Repeat new password"></div>
+        </div>
+        <button class="btn btn-dark btn-sm" id="savePassBtn">Update Password</button>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:14px">Tip: change the default password immediately after first login. Store your web app URL securely — anyone with the URL can view the site.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="demo-banner" id="demoBanner" style="display:none">Preview mode — open this file through your deployed Google Apps Script web app URL to enable leads, uploads and admin panel.</div>
+
+<script>
+/* ============================================================
+   SURVIV INTERIORS — Frontend Logic
+   ============================================================ */
+const GAS_READY = (typeof google !== 'undefined') && google.script && google.script.run;
+let CONFIG = { businessName:'Surviv Interiors', tagline:'Full Home Interior Design', phone:'', whatsapp:'', email:'', address:'', mapLink:'', facebook:'', instagram:'', youtube:'', adminPassword:'' };
+let MEDIA = [];
+let FEEDBACK = [];
+let ADMIN = sessionStorage.getItem('si_admin') === '1';
+let fbRating = 5;
+
+/* ---------- server bridge ---------- */
+function callServer(fn) {
+  const args = Array.prototype.slice.call(arguments, 1);
+  const cb = args.pop();
+  if (!GAS_READY) { setTimeout(() => cb({ __demo: true, ok: false, message: 'Preview mode' }, null), 30); return; }
+  google.script.run
+    .withSuccessHandler(res => cb(null, res))
+    .withFailureHandler(err => cb(err, null))
+    [fn].apply(null, args);
+}
+
+/* ---------- toast ---------- */
+let toastTimer;
+function toast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show ' + (type || '');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = 'toast' + (type ? ' ' + type : ''); }, 3400);
+}
+
+/* ---------- apply config ---------- */
+function applyConfig(cfg) {
+  CONFIG = Object.assign(CONFIG, cfg || {});
+  document.title = CONFIG.businessName + ' | ' + CONFIG.tagline;
+  document.querySelectorAll('[data-cfg]').forEach(el => {
+    const k = el.getAttribute('data-cfg');
+    if (CONFIG[k]) el.textContent = CONFIG[k];
+  });
+  if (CONFIG.phone) {
+    document.getElementById('phoneInline').textContent = CONFIG.phone;
+    document.getElementById('infoPhone').textContent = CONFIG.phone;
+    document.getElementById('footPhone').textContent = CONFIG.phone;
+  }
+  if (CONFIG.email) {
+    document.getElementById('infoEmail').textContent = CONFIG.email;
+    document.getElementById('footEmail').textContent = CONFIG.email;
+  }
+  if (CONFIG.address) {
+    document.getElementById('infoAddress').textContent = CONFIG.address;
+    document.getElementById('footAddress').textContent = CONFIG.address;
+  }
+  const wa = CONFIG.whatsapp ? String(CONFIG.whatsapp).replace(/[^\d]/g, '') : '';
+  const waUrl = wa ? 'https://wa.me/' + wa + '?text=' + encodeURIComponent('Hi ' + CONFIG.businessName + ', I need interior design consultation for my home.') : '#';
+  document.getElementById('waFab').href = waUrl;
+  document.getElementById('waLink').href = waUrl;
+  const socialMap = { facebook: 'facebook', instagram: 'instagram', youtube: 'youtube' };
+  document.querySelectorAll('[data-social]').forEach(a => {
+    const k = socialMap[a.getAttribute('data-social')];
+    if (CONFIG[k]) a.href = CONFIG[k];
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+}
+
+/* ---------- DEMO (preview) data ---------- */
+const DEMO_MEDIA = [
+  { type:'photo', title:'Walnut Wood Living Room', category:'Living', hue:28 },
+  { type:'video', title:'3BHK Design Walkthrough', category:'Living', hue:35 },
+  { type:'photo', title:'Matte Black Modular Kitchen', category:'Kitchen', hue:200 },
+  { type:'photo', title:'Serene Master Bedroom', category:'Bedroom', hue:210 },
+  { type:'photo', title:'Scandinavian Kids Room', category:'Kids', hue:160 },
+  { type:'photo', title:'Luxury Wardrobe Wall', category:'Bedroom', hue:40 },
+  { type:'video', title:'Kitchen Installation Process', category:'Kitchen', hue:30 },
+  { type:'photo', title:'Warm Cove Lighting Lounge', category:'Living', hue:32 }
+];
+const DEMO_FEEDBACK = [
+  { name:'Priya Sharma', ts:'', rating:5, message:'Surviv Interiors turned our 3BHK into a magazine-worthy home. The 3D designs were spot on and execution was flawless.' },
+  { name:'Rahul Verma', ts:'', rating:5, message:'Transparent pricing, on-time delivery and the modular kitchen quality is outstanding. Highly recommended!' },
+  { name:'Anita Desai', ts:'', rating:4, message:'Great design ideas and the team handled everything from materials to installation. Very professional service.' }
+];
+
+/* ---------- init ---------- */
+(function init() {
+  callServer('getPublicData', (err, res) => {
+    if (!err && res && res.ok) {
+      applyConfig(res.config);
+      MEDIA = res.media || [];
+      FEEDBACK = res.feedback || [];
+      renderMedia();
+      renderTestimonials();
+    } else {
+      applyConfig({});
+      MEDIA = DEMO_MEDIA.map(m => ({ id:'demo' + Math.random(), title:m.title, type:m.type, category:m.category, url:'', thumb:'', embed:null, published:true, hue:m.hue }));
+      FEEDBACK = DEMO_FEEDBACK;
+      renderMedia();
+      renderTestimonials();
+      document.getElementById('demoBanner').style.display = 'block';
+    }
+  });
+})();
+
+/* ---------- header / nav ---------- */
+const header = document.getElementById('siteHeader');
+const toTop = document.getElementById('toTop');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+  toTop.classList.toggle('show', window.scrollY > 500);
+});
+document.getElementById('burger').addEventListener('click', () => document.getElementById('mainNav').classList.toggle('open'));
+document.querySelectorAll('#mainNav a').forEach(a => a.addEventListener('click', () => document.getElementById('mainNav').classList.remove('open')));
+toTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+/* ---------- hero slider ---------- */
+const slides = Array.from(document.querySelectorAll('.slide'));
+const dotsWrap = document.getElementById('heroDots');
+let cur = 0, timer;
+slides.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.addEventListener('click', () => { goSlide(i); restart(); });
+  dotsWrap.appendChild(d);
+});
+function goSlide(i) {
+  cur = (i + slides.length) % slides.length;
+  slides.forEach((s, k) => s.classList.toggle('active', k === cur));
+  Array.from(dotsWrap.children).forEach((d, k) => d.classList.toggle('on', k === cur));
+}
+function restart() { clearInterval(timer); timer = setInterval(() => goSlide(cur + 1), 5500); }
+document.getElementById('nextSlide').addEventListener('click', () => { goSlide(cur + 1); restart(); });
+document.getElementById('prevSlide').addEventListener('click', () => { goSlide(cur - 1); restart(); });
+goSlide(0); restart();
+
+/* ---------- counters & reveal ---------- */
+function animateCount(el) {
+  const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+  const suffix = el.getAttribute('data-suffix') || '';
+  let n = 0; const step = Math.max(1, Math.ceil(target / 45));
+  const iv = setInterval(() => {
+    n += step;
+    if (n >= target) { n = target; clearInterval(iv); }
+    el.textContent = n + suffix;
+  }, 28);
+}
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      en.target.classList.add('visible');
+      en.target.querySelectorAll('[data-count]').forEach(animateCount);
+      io.unobserve(en.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal, .hero-stats').forEach(el => io.observe(el));
+document.querySelectorAll('.hero-stats [data-count]').forEach(animateCount);
+
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll('.faq').forEach(f => {
+  const q = f.querySelector('.faq-q');
+  const a = f.querySelector('.faq-a');
+  q.addEventListener('click', () => {
+    const open = f.classList.contains('open');
+    document.querySelectorAll('.faq.open').forEach(o => { o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null; });
+    if (!open) { f.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  });
+});
+
+/* ---------- media gallery ---------- */
+function mediaTileBg(m) {
+  if (m.thumb) return '';
+  const h = m.hue !== undefined ? m.hue : (hashCode(m.title) % 360);
+  return 'background:linear-gradient(135deg,hsl(' + h + ',42%,34%),hsl(' + ((h + 40) % 360) + ',48%,18%));';
+}
+function hashCode(s) { let h = 0; for (let i = 0; i < String(s).length; i++) { h = (h << 5) - h + String(s).charCodeAt(i); h |= 0; } return Math.abs(h); }
+
+let filterType = 'all', filterCat = null;
+document.getElementById('mediaFilters').addEventListener('click', e => {
+  const btn = e.target.closest('.chip');
+  if (!btn) return;
+  if (btn.dataset.filter) {
+    filterType = btn.dataset.filter;
+    filterCat = null;
+    document.querySelectorAll('#mediaFilters .chip').forEach(c => c.classList.toggle('on', c === btn));
+  } else if (btn.dataset.cat) {
+    filterCat = btn.dataset.cat;
+    filterType = 'all';
+    document.querySelectorAll('#mediaFilters .chip').forEach(c => c.classList.toggle('on', c === btn));
+  }
+  renderMedia();
+});
+
+function renderMedia() {
+  const grid = document.getElementById('mediaGrid');
+  const list = MEDIA.filter(m => {
+    if (filterType !== 'all' && m.type !== filterType) return false;
+    if (filterCat && m.category !== filterCat) return false;
+    return true;
+  });
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><span class="serif">No projects in this category yet</span>Check back soon for fresh designs.</div>';
+    return;
+  }
+  grid.innerHTML = list.map(m => {
+    const badge = m.type === 'video' ? '<span class="m-badge video">Video</span>' : '<span class="m-badge">Photo</span>';
+    const play = m.type === 'video' ? '<span class="play-btn">&#9654;</span>' : '';
+    const img = m.thumb ? '<img src="' + m.thumb + '" alt="' + esc(m.title) + '" loading="lazy">' : '<span class="tile" style="' + mediaTileBg(m) + '"><span class="serif">' + esc(m.category || 'Design') + '</span></span>';
+    return '<div class="m-item" data-id="' + m.id + '" data-type="' + m.type + '">' + badge + play + img +
+      '<span class="veil"><span><small>' + esc(m.category || 'Project') + '</small><b>' + esc(m.title) + '</b></span></span></div>';
+  }).join('');
+  grid.querySelectorAll('.m-item').forEach(item => {
+    item.addEventListener('click', () => openLightbox(item.getAttribute('data-id')));
+  });
+}
+
+function openLightbox(id) {
+  const m = MEDIA.find(x => String(x.id) === String(id));
+  if (!m) return;
+  const content = document.getElementById('lbContent');
+  const cap = document.getElementById('lbCap');
+  cap.textContent = m.title;
+  if (m.type === 'photo') {
+    if (m.thumb) content.innerHTML = '<img src="' + m.thumb + '" alt="' + esc(m.title) + '">';
+    else { content.innerHTML = ''; const div = document.createElement('div'); div.style.cssText = 'height:60vh;border-radius:10px;' + mediaTileBg(m); div.innerHTML = '<span class="tile" style="height:100%"><span class="serif" style="font-size:1.8rem">' + esc(m.title) + '</span></span>'; content.appendChild(div); }
+  } else if (m.embed) {
+    content.innerHTML = '<iframe src="' + m.embed + '?autoplay=1" allowfullscreen allow="autoplay"></iframe>';
+  } else if (m.url) {
+    content.innerHTML = '<div style="text-align:center;padding:40px"><p style="color:#fff;margin-bottom:20px">This video is hosted externally.</p><a href="' + m.url + '" target="_blank" rel="noopener" class="btn btn-gold">Open Video</a></div>';
+  } else {
+    content.innerHTML = '<div style="height:60vh;' + mediaTileBg(m).replace('background:', 'background:') + ';border-radius:10px;display:grid;place-items:center"><span class="play-btn">&#9654;</span></div>';
+  }
+  document.getElementById('lightbox').classList.add('open');
+}
+document.getElementById('lbClose').addEventListener('click', closeLightbox);
+document.getElementById('lightbox').addEventListener('click', e => { if (e.target.id === 'lightbox') closeLightbox(); });
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.getElementById('lbContent').innerHTML = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeLightbox(); closeAdmin(); document.getElementById('loginModal').classList.remove('open'); } });
+
+/* ---------- testimonials ---------- */
+let testiIdx = 0;
+function renderTestimonials() {
+  const track = document.getElementById('testiTrack');
+  const nav = document.getElementById('testiNav');
+  if (!FEEDBACK.length) { track.innerHTML = ''; nav.innerHTML = ''; return; }
+  track.innerHTML = FEEDBACK.map(f =>
+    '<div class="testi"><span class="q">&ldquo;</span><div class="stars">' + stars(f.rating) + '</div>' +
+    '<p>' + esc(f.message) + '</p>' +
+    '<div class="who"><b>' + esc(f.name) + '</b><span>Verified Homeowner</span></div></div>'
+  ).join('');
+  nav.innerHTML = FEEDBACK.map((_, i) => '<button class="' + (i === 0 ? 'on' : '') + '" data-i="' + i + '"></button>').join('');
+  testiIdx = 0;
+  track.style.transform = 'translateX(0)';
+  nav.querySelectorAll('button').forEach(b => b.addEventListener('click', () => setTesti(parseInt(b.dataset.i, 10))));
+}
+function setTesti(i) {
+  testiIdx = i % FEEDBACK.length;
+  document.getElementById('testiTrack').style.transform = 'translateX(-' + (testiIdx * 100) + '%)';
+  document.querySelectorAll('#testiNav button').forEach((b, k) => b.classList.toggle('on', k === testiIdx));
+}
+setInterval(() => { if (FEEDBACK.length && !document.querySelector('#testimonials:hover')) setTesti(testiIdx + 1); }, 6000);
+function stars(r) {
+  let s = '';
+  for (let i = 1; i <= 5; i++) s += i <= r ? '&#9733;' : '&#9734;';
+  return s;
+}
+
+/* ---------- star input ---------- */
+const starSpans = document.querySelectorAll('#starInput span');
+function paintStars(n) { starSpans.forEach((s, i) => s.style.color = i < n ? '#b98846' : '#d8cfc2'); }
+starSpans.forEach(s => {
+  s.addEventListener('mouseenter', () => paintStars(parseInt(s.dataset.v, 10)));
+  s.addEventListener('click', () => { fbRating = parseInt(s.dataset.v, 10); document.getElementById('ratingInput').value = fbRating; paintStars(fbRating); });
+});
+document.getElementById('starInput').addEventListener('mouseleave', () => paintStars(fbRating));
+paintStars(5);
+
+/* ---------- lead form ---------- */
+document.getElementById('leadForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  const btn = document.getElementById('leadSubmit');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  const payload = {
+    name: f.name.value.trim(), phone: f.phone.value.trim(), email: f.email.value.trim(),
+    city: f.city.value.trim(), service: f.service.value, budget: f.budget.value,
+    message: f.message.value.trim(), source: 'Website'
+  };
+  callServer('submitLead', payload, (err, res) => {
+    btn.disabled = false;
+    btn.textContent = 'Submit Enquiry';
+    if (!err && res && res.ok) {
+      toast(res.message, 'ok');
+      f.reset();
+    } else {
+      toast((res && res.message) || 'Failed to send. Please call us directly.', 'err');
+    }
+  });
+});
+
+/* ---------- feedback form ---------- */
+document.getElementById('feedbackForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  const btn = document.getElementById('fbSubmit');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  callServer('submitFeedback', { name: f.name.value.trim(), email: f.email.value.trim(), rating: fbRating, message: f.message.value.trim() }, (err, res) => {
+    btn.disabled = false;
+    btn.textContent = 'Submit Feedback';
+    if (!err && res && res.ok) {
+      toast(res.message, 'ok');
+      f.reset();
+      fbRating = 5;
+      document.getElementById('ratingInput').value = 5;
+      paintStars(5);
+    } else {
+      toast((res && res.message) || 'Failed to submit feedback.', 'err');
+    }
+  });
+});
+
+/* ================= ADMIN PANEL ================= */
+document.getElementById('adminOpenBtn').addEventListener('click', () => {
+  if (ADMIN) { openAdmin(); } else { document.getElementById('loginModal').classList.add('open'); document.getElementById('loginPassword').focus(); }
+});
+document.getElementById('loginForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const pw = document.getElementById('loginPassword').value;
+  callServer('adminLogin', pw, (err, res) => {
+    if (!err && res === true) {
+      ADMIN = true;
+      sessionStorage.setItem('si_admin', '1');
+      document.getElementById('loginModal').classList.remove('open');
+      document.getElementById('loginPassword').value = '';
+      openAdmin();
+      loadDashboard();
+    } else {
+      toast('Incorrect password. Please try again.', 'err');
+    }
+  });
+});
+document.getElementById('adLogout').addEventListener('click', () => {
+  ADMIN = false;
+  sessionStorage.removeItem('si_admin');
+  closeAdmin();
+  toast('Logged out of admin panel.');
+});
+function openAdmin() {
+  document.getElementById('adminPanel').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeAdmin() {
+  document.getElementById('adminPanel').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('adTabs').addEventListener('click', e => {
+  const btn = e.target.closest('button[data-tab]');
+  if (!btn) return;
+  switchTab(btn.dataset.tab);
+});
+document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => switchTab(b.dataset.goto)));
+function switchTab(tab) {
+  document.querySelectorAll('#adTabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
+  document.querySelectorAll('.ad-pane').forEach(p => p.classList.toggle('on', p.dataset.pane === tab));
+  if (tab === 'dashboard') loadDashboard();
+  if (tab === 'leads') loadLeads();
+  if (tab === 'feedback') loadFeedback();
+  if (tab === 'media') loadMedia();
+  if (tab === 'settings') loadSettings();
+}
+
+/* ---------- dashboard ---------- */
+function loadDashboard() {
+  callServer('getStats', (err, res) => {
+    if (err || !res || !res.ok) return;
+    document.getElementById('statGrid').innerHTML = [
+      ['Total Leads', res.totalLeads], ['New Leads', res.newLeads], ['Projects Won', res.wonLeads],
+      ['Total Feedback', res.totalFeedback], ['Avg. Rating', res.avgRating + ' / 5'], ['Published Media', res.publishedMedia + ' / ' + res.totalMedia]
+    ].map(s => '<div class="stat-card"><b>' + s[1] + '</b><span>' + s[0] + '</span></div>').join('');
+  });
+  callServer('getLeads', (err, res) => {
+    if (err || !res || !res.ok) return;
+    const rows = res.leads.slice(0, 6);
+    document.getElementById('dashLeads').innerHTML = rows.length ? rows.map(l =>
+      '<tr><td>' + esc(l.ts) + '</td><td><b>' + esc(l.name) + '</b></td><td>' + esc(l.phone) + '</td><td>' + esc(l.service) + '</td><td>' + esc(l.budget || '-') + '</td><td><span class="status-pill st-' + l.status.replace(/\s/g, '') + '">' + esc(l.status) + '</span></td></tr>'
+    ).join('') : '<tr><td colspan="6" class="empty">No leads yet.</td></tr>';
+  });
+  callServer('getFeedback', (err, res) => {
+    if (err || !res || !res.ok) return;
+    const rows = res.feedback.slice(0, 6);
+    document.getElementById('dashFeedback').innerHTML = rows.length ? rows.map(f =>
+      '<tr><td>' + esc(f.ts) + '</td><td><b>' + esc(f.name) + '</b></td><td class="stars" style="margin:0">' + stars(f.rating) + '</td><td>' + esc(truncate(f.message, 60)) + '</td><td>' + (f.approved ? '<span class="status-pill st-Won">Yes</span>' : '<span class="status-pill st-New">Pending</span>') + '</td></tr>'
+    ).join('') : '<tr><td colspan="5" class="empty">No feedback yet.</td></tr>';
+  });
+}
+function truncate(s, n) { s = String(s || ''); return s.length > n ? s.slice(0, n) + '...' : s; }
+
+/* ---------- leads ---------- */
+const LEAD_STATUSES = ['New', 'Contacted', 'Site Visit Scheduled', 'Quotation Sent', 'Won', 'Lost'];
+const STATUS_CLASS = { 'New': 'st-New', 'Contacted': 'st-Contacted', 'Site Visit Scheduled': 'st-SiteVisit', 'Quotation Sent': 'st-Quotation', 'Won': 'st-Won', 'Lost': 'st-Lost' };
+function loadLeads() {
+  const tb = document.getElementById('leadsTable');
+  tb.innerHTML = '<tr><td colspan="12" class="empty"><span class="serif">Loading leads...</span></td></tr>';
+  callServer('getLeads', (err, res) => {
+    if (err || !res || !res.ok) { tb.innerHTML = '<tr><td colspan="12" class="empty">Failed to load leads.</td></tr>'; return; }
+    if (!res.leads.length) { tb.innerHTML = '<tr><td colspan="12" class="empty"><span class="serif">No leads yet</span>Share your website link to start receiving enquiries.</td></tr>'; return; }
+    tb.innerHTML = res.leads.map(l =>
+      '<tr>' +
+      '<td style="font-size:.72rem;color:var(--muted)">' + esc(l.id) + '</td>' +
+      '<td style="white-space:nowrap">' + esc(l.ts) + '</td>' +
+      '<td><b>' + esc(l.name) + '</b></td>' +
+      '<td><a href="tel:' + esc(l.phone) + '" style="color:var(--gold);font-weight:600">' + esc(l.phone) + '</a></td>' +
+      '<td>' + esc(l.email || '-') + '</td>' +
+      '<td>' + esc(l.city || '-') + '</td>' +
+      '<td>' + esc(l.service) + '</td>' +
+      '<td>' + esc(l.budget || '-') + '</td>' +
+      '<td style="max-width:220px">' + esc(truncate(l.message, 80)) + '</td>' +
+      '<td>' + esc(l.source) + '</td>' +
+      '<td><select class="st-sel" data-id="' + l.id + '">' + LEAD_STATUSES.map(s => '<option ' + (s === l.status ? 'selected' : '') + ' value="' + s + '">' + s + '</option>').join('') + '</select></td>' +
+      '<td style="white-space:nowrap"><button class="icon-btn" title="Call" data-call="' + esc(l.phone) + '">&#9742;</button><button class="icon-btn danger" title="Delete" data-del-lead="' + l.id + '">&#10005;</button></td>' +
+      '</tr>'
+    ).join('');
+    tb.querySelectorAll('.st-sel').forEach(sel => sel.addEventListener('change', () => {
+      callServer('updateLeadStatus', sel.dataset.id, sel.value, (e2, r2) => {
+        if (!e2 && r2 && r2.ok) toast('Lead status updated to "' + sel.value + '".', 'ok');
+        else toast('Failed to update status.', 'err');
+      });
+    }));
+    tb.querySelectorAll('[data-call]').forEach(b => b.addEventListener('click', () => { location.href = 'tel:' + b.dataset.call; }));
+    tb.querySelectorAll('[data-del-lead]').forEach(b => b.addEventListener('click', () => {
+      if (!confirm('Delete this lead permanently?')) return;
+      callServer('deleteLead', b.dataset.delLead, (e3, r3) => {
+        if (!e3 && r3 && r3.ok) { toast('Lead deleted.', 'ok'); loadLeads(); loadDashboard(); }
+        else toast('Failed to delete lead.', 'err');
+      });
+    }));
+  });
+}
+document.getElementById('refreshLeadsBtn').addEventListener('click', loadLeads);
+document.getElementById('exportCsvBtn').addEventListener('click', () => {
+  callServer('exportLeadsCsv', (err, res) => {
+    if (err || !res || !res.ok) { toast('Export failed.', 'err'); return; }
+    const csv = res.csv;
+    const uri = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+    const a = document.createElement('a');
+    a.href = uri;
+    a.download = 'surviv-interiors-leads-' + new Date().toISOString().slice(0, 10) + '.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    toast('Leads exported to CSV.', 'ok');
+  });
+});
+
+/* ---------- feedback admin ---------- */
+function loadFeedback() {
+  const tb = document.getElementById('fbTable');
+  tb.innerHTML = '<tr><td colspan="8" class="empty"><span class="serif">Loading feedback...</span></td></tr>';
+  callServer('getFeedback', (err, res) => {
+    if (err || !res || !res.ok) { tb.innerHTML = '<tr><td colspan="8" class="empty">Failed to load feedback.</td></tr>'; return; }
+    if (!res.feedback.length) { tb.innerHTML = '<tr><td colspan="8" class="empty"><span class="serif">No feedback yet</span></td></tr>'; return; }
+    tb.innerHTML = res.feedback.map(f =>
+      '<tr>' +
+      '<td style="font-size:.72rem;color:var(--muted)">' + esc(f.id) + '</td>' +
+      '<td style="white-space:nowrap">' + esc(f.ts) + '</td>' +
+      '<td><b>' + esc(f.name) + '</b></td>' +
+      '<td>' + esc(f.email || '-') + '</td>' +
+      '<td class="stars" style="margin:0">' + stars(f.rating) + '</td>' +
+      '<td style="max-width:260px">' + esc(truncate(f.message, 90)) + '</td>' +
+      '<td><button class="toggle ' + (f.approved ? 'on' : '') + '" data-fb="' + f.id + '" aria-label="Toggle visibility"></button></td>' +
+      '<td style="white-space:nowrap"><button class="icon-btn danger" data-del-fb="' + f.id + '">&#10005;</button></td>' +
+      '</tr>'
+    ).join('');
+    tb.querySelectorAll('[data-fb]').forEach(t => t.addEventListener('click', () => {
+      const id = t.dataset.fb;
+      const next = !t.classList.contains('on');
+      callServer('setFeedbackApproved', id, next, (e2, r2) => {
+        if (!e2 && r2 && r2.ok) {
+          t.classList.toggle('on', next);
+          toast(next ? 'Feedback is now visible on the website.' : 'Feedback hidden from website.', 'ok');
+        } else toast('Failed to update feedback.', 'err');
+      });
+    }));
+    tb.querySelectorAll('[data-del-fb]').forEach(b => b.addEventListener('click', () => {
+      if (!confirm('Delete this feedback permanently?')) return;
+      callServer('deleteFeedback', b.dataset.delFb, (e3, r3) => {
+        if (!e3 && r3 && r3.ok) { toast('Feedback deleted.', 'ok'); loadFeedback(); }
+        else toast('Failed to delete feedback.', 'err');
+      });
+    }));
+  });
+}
+document.getElementById('refreshFbBtn').addEventListener('click', loadFeedback);
+
+/* ---------- media admin ---------- */
+function loadMedia() {
+  const lib = document.getElementById('mediaLib');
+  lib.innerHTML = '<div class="empty" style="grid-column:1/-1"><span class="serif">Loading media...</span></div>';
+  callServer('getMedia', (err, res) => {
+    if (err || !res || !res.ok) { lib.innerHTML = '<div class="empty" style="grid-column:1/-1">Failed to load media.</div>'; return; }
+    if (!res.media.length) { lib.innerHTML = '<div class="empty" style="grid-column:1/-1"><span class="serif">Media library is empty</span>Upload photos or add video links — they appear on the website once published.</div>'; return; }
+    lib.innerHTML = res.media.map(m => {
+      const thumbHtml = m.thumb ? '<img src="' + m.thumb + '" alt="' + esc(m.title) + '">' : (m.type === 'video' ? '<span class="play-btn">&#9654;</span>' : '<span style="font-size:2rem">&#9634;</span>');
+      return '<div class="med-card">' +
+        '<div class="med-thumb">' + thumbHtml + '</div>' +
+        '<div class="med-body"><b>' + esc(m.title) + '</b><small>' + esc(m.type) + ' &middot; ' + esc(m.category || 'General') + '</small></div>' +
+        '<div class="med-actions">' +
+        '<button class="toggle ' + (m.published ? 'on' : '') + '" data-pub="' + m.id + '" title="Show on website"></button>' +
+        '<button class="icon-btn danger" data-del-media="' + m.id + '" title="Delete">&#10005;</button>' +
+        '</div></div>';
+    }).join('');
+    lib.querySelectorAll('[data-pub]').forEach(t => t.addEventListener('click', () => {
+      callServer('toggleMediaPublished', t.dataset.pub, (e2, r2) => {
+        if (!e2 && r2 && r2.ok) { t.classList.toggle('on', r2.published === 'Yes'); toast(r2.published === 'Yes' ? 'Published on website.' : 'Unpublished.', 'ok'); }
+        else toast('Failed to update media.', 'err');
+      });
+    }));
+    lib.querySelectorAll('[data-del-media]').forEach(b => b.addEventListener('click', () => {
+      if (!confirm('Delete this media file permanently?')) return;
+      callServer('deleteMedia', b.dataset.delMedia, (e3, r3) => {
+        if (!e3 && r3 && r3.ok) { toast('Media deleted.', 'ok'); loadMedia(); }
+        else toast('Failed to delete media.', 'err');
+      });
+    }));
+  });
+}
+document.getElementById('refreshMediaBtn').addEventListener('click', loadMedia);
+
+/* photo upload */
+const photoInput = document.getElementById('photoInput');
+document.getElementById('uploadZone').addEventListener('click', () => photoInput.click());
+photoInput.addEventListener('change', () => {
+  if (photoInput.files && photoInput.files[0]) {
+    document.getElementById('photoTitle').placeholder = photoInput.files[0].name;
+    document.getElementById('uploadZone').style.borderColor = '#b98846';
+  }
+});
+document.getElementById('uploadPhotoBtn').addEventListener('click', () => {
+  const file = photoInput.files && photoInput.files[0];
+  if (!file) { toast('Please choose a photo first.', 'err'); return; }
+  if (file.size > 3 * 1024 * 1024) { toast('Photo is too large. Please use an image under 3MB.', 'err'); return; }
+  const reader = new FileReader();
+  reader.onload = () => {
+    const btn = document.getElementById('uploadPhotoBtn');
+    btn.disabled = true;
+    btn.textContent = 'Uploading...';
+    callServer('uploadPhoto', reader.result, file.name, file.type, document.getElementById('photoTitle').value.trim() || file.name, document.getElementById('photoCat').value, (err, res) => {
+      btn.disabled = false;
+      btn.textContent = 'Upload Photo';
+      if (!err && res && res.ok) {
+        toast('Photo uploaded. Publish it from the library to show it on the site.', 'ok');
+        photoInput.value = '';
+        document.getElementById('photoTitle').value = '';
+        document.getElementById('uploadZone').style.borderColor = '';
+        loadMedia();
+      } else {
+        toast((res && res.message) || 'Upload failed.', 'err');
+      }
+    });
+  };
+  reader.readAsDataURL(file);
+});
+
+/* video url */
+document.getElementById('addVideoBtn').addEventListener('click', () => {
+  const url = document.getElementById('videoUrl').value.trim();
+  const title = document.getElementById('videoTitle').value.trim();
+  const cat = document.getElementById('videoCat').value;
+  if (!url) { toast('Please paste a video URL.', 'err'); return; }
+  const btn = document.getElementById('addVideoBtn');
+  btn.disabled = true;
+  btn.textContent = 'Adding...';
+  callServer('addVideoUrl', url, title, cat, (err, res) => {
+    btn.disabled = false;
+    btn.textContent = 'Add Video';
+    if (!err && res && res.ok) {
+      toast('Video added. Publish it from the library to show it on the site.', 'ok');
+      document.getElementById('videoUrl').value = '';
+      document.getElementById('videoTitle').value = '';
+      loadMedia();
+    } else {
+      toast((res && res.message) || 'Failed to add video.', 'err');
+    }
+  });
+});
+
+/* ---------- settings ---------- */
+function loadSettings() {
+  callServer('getConfig', (err, res) => {
+    if (err || !res) return;
+    const cfg = res;
+    const map = { cfgBusinessName: 'businessName', cfgTagline: 'tagline', cfgPhone: 'phone', cfgWhatsapp: 'whatsapp', cfgEmail: 'email', cfgAddress: 'address', cfgMapLink: 'mapLink', cfgFacebook: 'facebook', cfgInstagram: 'instagram', cfgYoutube: 'youtube' };
+    Object.keys(map).forEach(id => { document.getElementById(id).value = cfg[map[id]] || ''; });
+  });
+}
+document.getElementById('saveCfgBtn').addEventListener('click', () => {
+  const payload = {
+    businessName: document.getElementById('cfgBusinessName').value.trim(),
+    tagline: document.getElementById('cfgTagline').value.trim(),
+    phone: document.getElementById('cfgPhone').value.trim(),
+    whatsapp: document.getElementById('cfgWhatsapp').value.trim(),
+    email: document.getElementById('cfgEmail').value.trim(),
+    address: document.getElementById('cfgAddress').value.trim(),
+    mapLink: document.getElementById('cfgMapLink').value.trim(),
+    facebook: document.getElementById('cfgFacebook').value.trim(),
+    instagram: document.getElementById('cfgInstagram').value.trim(),
+    youtube: document.getElementById('cfgYoutube').value.trim()
+  };
+  callServer('saveConfig', payload, (err, res) => {
+    if (!err && res && res.ok) {
+      applyConfig(res.config);
+      toast('Business settings saved.', 'ok');
+    } else toast('Failed to save settings.', 'err');
+  });
+});
+document.getElementById('savePassBtn').addEventListener('click', () => {
+  const p1 = document.getElementById('cfgNewPass').value;
+  const p2 = document.getElementById('cfgNewPass2').value;
+  if (!p1) { toast('Enter a new password.', 'err'); return; }
+  if (p1.length < 4) { toast('Password must be at least 4 characters.', 'err'); return; }
+  if (p1 !== p2) { toast('Passwords do not match.', 'err'); return; }
+  const current = CONFIG.adminPassword;
+  callServer('saveConfig', { adminPassword: p1 }, (err, res) => {
+    if (!err && res && res.ok) {
+      CONFIG.adminPassword = p1;
+      document.getElementById('cfgNewPass').value = '';
+      document.getElementById('cfgNewPass2').value = '';
+      toast('Admin password updated.', 'ok');
+    } else toast('Failed to update password.', 'err');
+  });
+});
+
+/* ---------- esc helper ---------- */
+function esc(s) {
+  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+</script>
+</body>
+</html>
